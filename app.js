@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/client'));
 
 Genre = require('./models/genres');
 Book = require('./models/book');
